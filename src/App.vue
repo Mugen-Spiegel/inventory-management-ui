@@ -1,18 +1,27 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <LayOut/>
-  </div>
+    <v-app>
+      <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+        <Authenication v-if="!token"/>
+        <LayOut v-if="token"/>
+    </v-app>
 </template>
 
 <script>
 import LayOut from './components/LayOut.vue'
+import Authenication from './components/Authentication/AuthenticationComponent.vue'
+import { mapState } from 'vuex'
 
 export default {
   name: 'app',
   components: {
-    LayOut
-  }
+    LayOut,
+    Authenication
+  },
+  computed: {
+      ...mapState({
+        token: state => state.authentication.token,
+      })
+    }
 }
 </script>
 
@@ -23,6 +32,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

@@ -6,6 +6,7 @@ import vuetify from '@/plugins/vuetify' // path to vuetify export
 import { store } from './store/index'
 
 
+
 new Vue({
   vuetify,
   store,

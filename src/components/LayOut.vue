@@ -53,12 +53,12 @@
     <v-content v-if="activeTab =='Stocks'">
         <Stocks/>
     </v-content>
-    <v-footer
+    <!-- <v-footer
       color="indigo"
       app
     >
       <span class="white--text">&copy; 2019</span>
-    </v-footer>
+    </v-footer> -->
   </v-app>
 </template>
 

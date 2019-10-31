@@ -24,6 +24,7 @@
           { text: 'Carbs (g)', value: 'carbs' },
           { text: 'Protein (g)', value: 'protein' },
           { text: 'Iron (%)', value: 'iron' },
+          { text: 'Amount ', value: 'amount' },
         ],
         desserts: [
           {
@@ -33,6 +34,7 @@
             carbs: 24,
             protein: 4.0,
             iron: '1%',
+            amount: 20
           },
           {
             name: 'Ice cream sandwich',
@@ -41,6 +43,7 @@
             carbs: 37,
             protein: 4.3,
             iron: '1%',
+            amount: 20
           },
           {
             name: 'Eclair',
@@ -49,6 +52,7 @@
             carbs: 23,
             protein: 6.0,
             iron: '7%',
+            amount: 20
           },
           {
             name: 'Cupcake',
@@ -57,6 +61,7 @@
             carbs: 67,
             protein: 4.3,
             iron: '8%',
+            amount: 20
           },
           {
             name: 'Gingerbread',
@@ -65,6 +70,7 @@
             carbs: 49,
             protein: 3.9,
             iron: '16%',
+            amount: 20
           },
           {
             name: 'Jelly bean',
@@ -73,6 +79,7 @@
             carbs: 94,
             protein: 0.0,
             iron: '0%',
+            amount: 20
           },
           {
             name: 'Lollipop',
@@ -81,6 +88,7 @@
             carbs: 98,
             protein: 0,
             iron: '2%',
+            amount: 20
           },
           {
             name: 'Honeycomb',
@@ -89,6 +97,7 @@
             carbs: 87,
             protein: 6.5,
             iron: '45%',
+            amount: 20
           },
           {
             name: 'Donut',
@@ -97,6 +106,7 @@
             carbs: 51,
             protein: 4.9,
             iron: '22%',
+            amount: 20
           },
           {
             name: 'KitKat',
@@ -105,6 +115,7 @@
             carbs: 65,
             protein: 7,
             iron: '6%',
+            amount: 9
           },
         ],
       }
