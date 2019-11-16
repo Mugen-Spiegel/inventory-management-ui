@@ -46,7 +46,11 @@ export default  {
                 code:"Contact"
             },
         },
-        activeTab:"Home"
+        activeTab: {
+            icon:"mdi-home",
+            text:"Home",
+            code:"home"
+        },
     },
     getters: {
         active: (state) => {

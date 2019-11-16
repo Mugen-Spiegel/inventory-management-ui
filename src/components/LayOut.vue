@@ -27,7 +27,7 @@
            </v-list-group>
 
 
-          <v-list-item v-if="!item.child" @click="getActiveTabs(item.code)">
+          <v-list-item v-if="!item.child" @click="getActiveTabs(item)">
             <v-list-item-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
@@ -47,11 +47,17 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>{{activeTab}}</v-toolbar-title>
+      <v-toolbar-title>{{activeTab.text}}</v-toolbar-title>
     </v-app-bar>
 
-    <v-content v-if="activeTab =='RecieveMoney'">
+    <v-content v-if="activeTab.code =='home'">
+        <Dashboard/>
+    </v-content>
+    <v-content v-if="activeTab.code =='RecieveMoney'">
         <RecieveMoney/>
+    </v-content>
+    <v-content v-if="activeTab.code =='SendMoney'">
+        <SendMoney/>
     </v-content>
     <!-- <v-footer
       color="indigo"
@@ -67,10 +73,14 @@ import { mapState } from 'vuex'
 
 
 import RecieveMoney from './RecieveMoney/index.vue'
+import SendMoney from './SendMoney/index.vue'
+import Dashboard from './Dashboard/index.vue'
 
   export default {
     components: {
-    RecieveMoney
+    RecieveMoney,
+    SendMoney,
+    Dashboard
     },
     computed: {
       ...mapState({
