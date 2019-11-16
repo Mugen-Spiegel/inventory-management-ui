@@ -5,36 +5,45 @@ export default  {
             Home: {
                 icon:"mdi-home",
                 text:"Home",
+                code:"home"
             },
-            PointOfSale: {
+            SendMoney: {
+                icon:"mdi-currency-usd",
+                text:"Send Money",
+                code:"SendMoney"
+            },
+            RecieveMoney: {
                 icon:"mdi-printer-pos",
-                text:"Point of Sales"
+                text:"Receive money",
+                code:"RecieveMoney"
             },
-            Inventory: {
-                icon:"mdi-table-large",
-                text:"Inventory",
-                child: {
-                    Stocks: {
-                        icon:"mdi-format-list-numbered",
-                        text:"Stocks",
-                    },
-                    CriticalStocks: {
-                        icon:"mdi-format-list-numbered",
-                        text:"Critical Stocks",
-                    },
-                    ReplenishStocks: {
-                        icon:"mdi-format-list-numbered",
-                        text:"Replenish Stocks",
-                    },
-                }
-            },
+            // Inventory: {
+            //     icon:"mdi-table-large",
+            //     text:"Inventory",
+            //     child: {
+            //         Stocks: {
+            //             icon:"mdi-format-list-numbered",
+            //             text:"Stocks",
+            //         },
+            //         CriticalStocks: {
+            //             icon:"mdi-format-list-numbered",
+            //             text:"Critical Stocks",
+            //         },
+            //         ReplenishStocks: {
+            //             icon:"mdi-format-list-numbered",
+            //             text:"Replenish Stocks",
+            //         },
+            //     }
+            // },
             SalesHistory: {
                 icon:"mdi-table-large",
                 text:"Sales History",
+                code:"SalesHistory"
             },
             Contact: {
                 icon:"mdi-contact-mail",
-                text:"Contact"
+                text:"Contact",
+                code:"Contact"
             },
         },
         activeTab:"Home"

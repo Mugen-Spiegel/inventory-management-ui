@@ -27,7 +27,7 @@
            </v-list-group>
 
 
-          <v-list-item v-if="!item.child" @click="getActiveTabs(item.text)">
+          <v-list-item v-if="!item.child" @click="getActiveTabs(item.code)">
             <v-list-item-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
@@ -50,8 +50,8 @@
       <v-toolbar-title>{{activeTab}}</v-toolbar-title>
     </v-app-bar>
 
-    <v-content v-if="activeTab =='Stocks'">
-        <Stocks/>
+    <v-content v-if="activeTab =='RecieveMoney'">
+        <RecieveMoney/>
     </v-content>
     <!-- <v-footer
       color="indigo"
@@ -66,11 +66,11 @@
 import { mapState } from 'vuex'
 
 
-import Stocks from './stocks/index.vue'
+import RecieveMoney from './RecieveMoney/index.vue'
 
   export default {
     components: {
-    Stocks
+    RecieveMoney
     },
     computed: {
       ...mapState({

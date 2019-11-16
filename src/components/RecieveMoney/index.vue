@@ -1,7 +1,7 @@
 
 <template>
   <v-card>
-    <v-tabs
+    <!-- <v-tabs
       v-model="tab"
       background-color="teal darken-3"
       dark
@@ -15,28 +15,32 @@
       >
         {{ item }}
       </v-tab>
-    </v-tabs>
+    </v-tabs> -->
 
-    <v-tabs-items v-model="tab">
+    <!-- <v-tabs-items v-model="tab">
       <v-tab-item
         v-for="(item, index) in category"
         :key="index"
       >
       
         <v-card flat>
-          <StocksTable/>
+          
         </v-card>
       </v-tab-item>
-    </v-tabs-items>
+    </v-tabs-items> -->
+    <FormRecieve/>
+    <TableRecieve/>
   </v-card>
 </template>
 
 <script>
-import StocksTable from './StocksTable.vue'
+import TableRecieve from './TableRecieve.vue'
+import FormRecieve from './FormRecieve.vue'
 
   export default {
     components: {
-        StocksTable
+        TableRecieve,
+        FormRecieve
     },
     data () {
       return {

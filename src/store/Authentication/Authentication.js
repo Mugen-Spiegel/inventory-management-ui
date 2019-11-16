@@ -1,7 +1,7 @@
 
 export default  {
     state: {
-        token: false
+        token: true
     },
     getters: {
         get_token: (state) => {
